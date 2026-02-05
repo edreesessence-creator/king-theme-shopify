@@ -1,0 +1,7 @@
+<h1>Your Cart</h1>
+
+{% for item in cart.items %}
+  <p>{{ item.product.title }} - {{ item.line_price | money }}</p>
+{% endfor %}
+
+<p>Total: {{ cart.total_price | money }}</p>

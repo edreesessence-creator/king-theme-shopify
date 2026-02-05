@@ -1,0 +1,14 @@
+<section class="hero">
+  <h2>{{ section.settings.heading }}</h2>
+  <p>{{ section.settings.text }}</p>
+</section>
+
+{% schema %}
+{
+  "name": "Hero",
+  "settings": [
+    { "type": "text", "id": "heading", "default": "Welcome to our store" },
+    { "type": "text", "id": "text", "default": "Premium quality products" }
+  ]
+}
+{% endschema %}

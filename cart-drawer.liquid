@@ -1,0 +1,6 @@
+<div id="cartDrawer" class="cart-drawer">
+  {% for item in cart.items %}
+    <p>{{ item.product.title }} × {{ item.quantity }}</p>
+  {% endfor %}
+  <a href="/cart">Go to cart</a>
+</div>
